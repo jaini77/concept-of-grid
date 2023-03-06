@@ -1,0 +1,16 @@
+*{
+    font-family: 'lato',sans-serif;
+    box-sizing: border-box;
+}
+
+#board {
+    display: flex;
+    margin-left:3%;}
+.column {
+    padding: 19px;
+    border: solid 1px black;}
+.column:hover{
+   transform: translate(1px);
+   background-color:rgb(49, 38, 38) ;
+    letter-spacing: 0.25em;}
+

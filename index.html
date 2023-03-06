@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div style="text-align: center">
+        <input type="text" id="hex">
+        <input type="color" id="color">
+        <h1>Hello World</h1>
+    </div>
+
+        <div id="board"></div>
+
+    <script>
+    function createBoard() {
+        const hello ="jk";
+        for(let a=0; a<24; a++) {
+            var row = document.createElement("div");
+            document.getElementById("board").appendChild(row);
+            row.className = 'row';
+            for(let b=0; b<24; b++) {
+                var column = document.createElement("div"); 
+                column.innerHTML = hello;
+                column.className = 'column';
+                row.appendChild(column);
+                
+            }
+        }    
+    }
+    createBoard()
+    </script>
+    <script src="index.js"></script>
+   
+</body>
+</html>
